@@ -10,6 +10,7 @@ import { CrudComponent } from './crud/crud.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CrudService } from './crud/crud.service';
+import { CrudDatosComponent } from './crud-datos/crud-datos.component';
 
 
 
@@ -18,7 +19,8 @@ import { CrudService } from './crud/crud.service';
     AppComponent,
     CrudComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CrudDatosComponent
   ],
   imports: [
     BrowserModule,

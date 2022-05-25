@@ -58,11 +58,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row my-1">
+                        <!-- <div class="form-group row my-1">
                             <div class="col-sm-8">
                                 <input placeholder="Toma de medicamentos de hipertencion" type="text" class="form-control" name="tomaMedHiper" style="width:470px;" [(ngModel)]="crud.tomaMedHiper">
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
@@ -75,6 +75,24 @@
                                 <input placeholder="Presion diasnosticada" type="text" class="form-control" name="Presion arterial" style="width:470px;" [(ngModel)]="crud.presionDiast">
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label>¿Toma medicamentos para la hipertencion?</label>
+                            <div class="form-control" style="width:470px;">
+                                <label class="radion-inline">
+                                    SI
+                                    <input class="form-check-input" name="flexRadioDefault" type="radio" value="true" [(ngModel)]="crud.tomaMedHiper">
+                                </label>
+    
+                                <label class="radion-inline">
+                                    NO
+                                    <input class="form-check-input" name="flexRadioDefault" type="radio" value="false" [(ngModel)]="crud.tomaMedHiper">
+                                </label>
+                            </div>
+
+                        </div>
+                        
+
 
                         <div class="text-center">
                             <button class="btn btn-success" (click)="create()">Guardar</button>

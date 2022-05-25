@@ -5,8 +5,7 @@ import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-crud',
-  templateUrl: './crud.component.html',
-  styleUrls: ['./crud.component.css']
+  templateUrl: './crud.component.html'
 })
 export class CrudComponent implements OnInit {
 
