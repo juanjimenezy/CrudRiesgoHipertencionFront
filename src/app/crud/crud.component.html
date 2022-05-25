@@ -12,66 +12,72 @@
                     <form>
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Nombre completo" type="text" class="form-control" name="nombre" style="width:470px;">
+                                <input placeholder="Nombre completo" type="text" class="form-control" name="nombre" style="width:470px;" [(ngModel)]="crud.nombre">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8 ">
-                                <input placeholder="Pais" type="text" class="form-control" name="pais" style="width:470px;">
+                                <input placeholder="Pais" type="text" class="form-control" name="pais" style="width:470px;" [(ngModel)]="crud.pais">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Departamento" type="text" class="form-control" name="departamento" style="width:470px;">
+                                <input placeholder="Departamento" type="text" class="form-control" name="departamento" style="width:470px;" [(ngModel)]="crud.departamento">
                             </div>
                         </div>
 
                         <div class="form-group row my-1 my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Fecha de nacimiento" type="text" class="form-control" name="fechaNacimiento" style="width:470px;">
+                                <input placeholder="Fecha de nacimiento" type="date" class="form-control" name="fechaNacimiento" style="width:470px;" [(ngModel)]="crud.fechaNacimiento">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Peso" type="text" class="form-control" name="peso" style="width:470px;">
+                                <input placeholder="Peso" type="text" class="form-control" name="peso" style="width:470px;" [(ngModel)]="crud.peso">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Altura" type="text" class="form-control" name="altura" style="width:470px;">
+                                <input placeholder="Altura" type="text" class="form-control" name="altura" style="width:470px;" [(ngModel)]="crud.altura">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Perimetro de cintura" type="text" class="form-control" name="perimetroCintura" style="width:470px;">
+                                <input placeholder="Perimetro de cintura" type="text" class="form-control" name="perimetroCintura" style="width:470px;" [(ngModel)]="crud.perimetroCintura">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Tiempo de actividad fisica" type="text" class="form-control" name="tiempoActividadFisica" style="width:470px;">
+                                <input placeholder="Tiempo de actividad fisica" type="text" class="form-control" name="tiempoActividadFisica" style="width:470px;" [(ngModel)]="crud.tiempoActividadFisica">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Toma de medida de hipertencion" type="text" class="form-control" name="tomaMedHiper" style="width:470px;">
+                                <input placeholder="Toma de medicamentos de hipertencion" type="text" class="form-control" name="tomaMedHiper" style="width:470px;" [(ngModel)]="crud.tomaMedHiper">
                             </div>
                         </div>
 
                         <div class="form-group row my-1">
                             <div class="col-sm-8">
-                                <input placeholder="Presion arterial" type="text" class="form-control" name="Presion arterial" style="width:470px;">
+                                <input placeholder="Presion arterial" type="text" class="form-control" name="Presion arterial" style="width:470px;" [(ngModel)]="crud.presionArt">
+                            </div>
+                        </div>
+
+                        <div class="form-group row my-1">
+                            <div class="col-sm-8">
+                                <input placeholder="Presion diasnosticada" type="text" class="form-control" name="Presion arterial" style="width:470px;" [(ngModel)]="crud.presionDiast">
                             </div>
                         </div>
 
                         <div class="text-center">
-                            <button class="btn btn-success">Guardar</button>
+                            <button class="btn btn-success" (click)="create()">Guardar</button>
                         </div>
                         
 
